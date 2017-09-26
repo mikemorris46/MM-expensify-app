@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage component test suite should render NotFoundPage correctly 1`] = `
+<div>
+  <h2>
+    Oops (404) - this page doesn't exist.
+  </h2>
+  <Link
+    replace={false}
+    to="/"
+  >
+    Go to Home Page
+  </Link>
+</div>
+`;

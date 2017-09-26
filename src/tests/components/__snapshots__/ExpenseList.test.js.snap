@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExpenseList component test suite should render ExpenseList with empty message 1`] = `
+<div>
+  <p>
+    No expenses to show
+  </p>
+</div>
+`;
+
+exports[`ExpenseList component test suite should render ExpenseList with expenses 1`] = `
+<div>
+  <ExpenseListItem
+    amount={450}
+    createdAt={0}
+    description="Coffee"
+    id="1"
+    key="1"
+    note="Dome, Wanneroo"
+  />
+  <ExpenseListItem
+    amount={850}
+    createdAt={-345600000}
+    description="Pizza"
+    id="2"
+    key="2"
+    note="Dominos"
+  />
+  <ExpenseListItem
+    amount={425}
+    createdAt={345600000}
+    description="Tea bags"
+    id="3"
+    key="3"
+    note="Coles"
+  />
+</div>
+`;
