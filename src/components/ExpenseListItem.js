@@ -1,12 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import moment from 'moment';
+import numeral from 'numeral';
 
 const ExpenseListItem = ({ id, description, amount, createdAt, note }) => (
   <div>
     <Link to={`/edit/${id}`}>
       <h3>{description}</h3>
     </Link>
-    {note ? <p>{amount} - {createdAt} - {note}</p> : <p>{amount} - {createdAt}</p>} 
+    {note ? 
+      <p>
+        {numeral(amount / 100).format('$0,0.00')} 
+        - 
+        {moment(createdAt).format('Do MMMM YYYY')} 
+        - 
+        {note}
+      </p> 
+      : 
+      <p>
+        {numeral(amount / 100).format('$0,0.00')} 
+        - 
+        {moment(createdAt).format('Do MMMM YYYY')}
+      </p>} 
   </div>
 );
 

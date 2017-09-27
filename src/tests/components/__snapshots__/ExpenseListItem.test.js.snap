@@ -11,10 +11,10 @@ exports[`ExpenseListItem component test suite should render ExpenseListItem corr
     </h3>
   </Link>
   <p>
-    850
-     - 
-    -345600000
-     - 
+    $8.50
+    -
+    28th December 1969
+    -
     Dominos
   </p>
 </div>
