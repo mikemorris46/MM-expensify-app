@@ -36,6 +36,7 @@ export const removeExpense = ({ id } = {}) => ({
   id
 });
 
+// Async action for REMOVE_EXPENSE
 export const startRemoveExpense = ({ id } = {}) => {
   return (dispatch) => {
     return database.ref(`expenses/${id}`).remove().then(() => {
@@ -51,6 +52,16 @@ export const editExpense = (id, updates) => ({
   id,
   updates
 });
+
+// Async action for Edit_EXPENSE
+
+export const startEditExpense = (id, updates) => {
+  return (dispatch) => {
+    return database.ref(`expenses/${id}`).update(updates).then(() => {
+      dispatch(editExpense(id, updates));
+    })
+  };
+};
 
 // SET_EXPENSES
 
