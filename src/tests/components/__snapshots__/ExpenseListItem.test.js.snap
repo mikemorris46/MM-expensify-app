@@ -1,21 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ExpenseListItem component test suite should render ExpenseListItem correctly 1`] = `
-<div>
-  <Link
-    replace={false}
-    to="/edit/2"
-  >
-    <h3>
+<Link
+  className="list-item"
+  replace={false}
+  to="/edit/2"
+>
+  <div>
+    <h3
+      className="list-item__title"
+    >
       Pizza
     </h3>
-  </Link>
-  <p>
+    <span
+      className="list-item__sub-title"
+    >
+      28th December 1969
+    </span>
+  </div>
+  <h3
+    className="list-item__data"
+  >
     $8.50
-    -
-    28th December 1969
-    -
-    Dominos
-  </p>
-</div>
+  </h3>
+</Link>
 `;
